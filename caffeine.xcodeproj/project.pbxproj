@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B2C3D401000000000000A1 /* CaffeineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A1 /* CaffeineApp.swift */; };
+		A1B2C3D401000000000000A2 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A2 /* Preferences.swift */; };
+		A1B2C3D401000000000000A3 /* CaffeinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A3 /* CaffeinateManager.swift */; };
+		A1B2C3D401000000000000A4 /* LoginItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A4 /* LoginItemManager.swift */; };
+		A1B2C3D401000000000000A5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A5 /* Localization.swift */; };
+		A1B2C3D401000000000000A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A6 /* AppDelegate.swift */; };
+		A1B2C3D401000000000000A7 /* SleepFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000A7 /* SleepFlag.swift */; };
+		A1B2C3D401000000000000B1 /* MenuBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B1 /* MenuBarContentView.swift */; };
+		A1B2C3D401000000000000B2 /* StatusHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B2 /* StatusHeaderView.swift */; };
+		A1B2C3D401000000000000B3 /* QuickTimerSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B3 /* QuickTimerSection.swift */; };
+		A1B2C3D401000000000000B4 /* OptionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B4 /* OptionsSection.swift */; };
+		A1B2C3D401000000000000B6 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B6 /* DesignTokens.swift */; };
+		A1B2C3D401000000000000B7 /* HeaderIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B7 /* HeaderIconButton.swift */; };
+		A1B2C3D401000000000000B8 /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B8 /* SectionTitleView.swift */; };
+		A1B2C3D401000000000000B9 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000B9 /* CustomToggle.swift */; };
+		A1B2C3D401000000000000BA /* TimerPresetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000BA /* TimerPresetButton.swift */; };
+		A1B2C3D401000000000000BB /* GlassPanelBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000BB /* GlassPanelBackground.swift */; };
+		A1B2C3D401000000000000BC /* FooterCreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000BC /* FooterCreditView.swift */; };
+		A1B2C3D401000000000000BD /* PanelOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000BD /* PanelOptionRow.swift */; };
+		A1B2C3D401000000000000D0 /* CaffeinateProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000D0 /* CaffeinateProcessRunner.swift */; };
+		A1B2C3D401000000000000D1 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000D1 /* LoginItemService.swift */; };
+		A1B2C3D401000000000000D2 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000D2 /* KeyValueStore.swift */; };
+		A1B2C3D401000000000000D3 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000D3 /* Clock.swift */; };
+		A1B2C3D401000000000000E0 /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E0 /* StatusItemController.swift */; };
+		A1B2C3D401000000000000E1 /* PanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E1 /* PanelController.swift */; };
+		A1B2C3D401000000000000E2 /* PanelEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E2 /* PanelEventMonitor.swift */; };
+		A1B2C3D401000000000000E3 /* PanelFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E3 /* PanelFrameCalculator.swift */; };
+		A1B2C3D401000000000000E4 /* PanelHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E4 /* PanelHostingView.swift */; };
+		A1B2C3D401000000000000E5 /* KeyablePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E5 /* KeyablePanel.swift */; };
+		A1B2C3D401000000000000E6 /* FlippedContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E6 /* FlippedContainerView.swift */; };
+		A1B2C3D401000000000000E7 /* MenuBarRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000E7 /* MenuBarRootView.swift */; };
+		A1B2C3D401000000000000C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D400000000000000C1 /* Assets.xcassets */; };
+		B1B2C3D40100000000000101 /* SleepFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000101 /* SleepFlagTests.swift */; };
+		B1B2C3D40100000000000102 /* PreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000102 /* PreferencesTests.swift */; };
+		B1B2C3D40100000000000103 /* CaffeinateManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000103 /* CaffeinateManagerTests.swift */; };
+		B1B2C3D40100000000000104 /* LoginItemManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000104 /* LoginItemManagerTests.swift */; };
+		B1B2C3D40100000000000105 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000105 /* LocalizationTests.swift */; };
+		B1B2C3D40100000000000106 /* PanelFrameCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000106 /* PanelFrameCalculatorTests.swift */; };
+		B1B2C3D40100000000000110 /* MockCaffeinateRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000110 /* MockCaffeinateRunner.swift */; };
+		B1B2C3D40100000000000111 /* MockLoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000111 /* MockLoginItemService.swift */; };
+		B1B2C3D40100000000000112 /* InMemoryKeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000112 /* InMemoryKeyValueStore.swift */; };
+		B1B2C3D40100000000000113 /* MockClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D40000000000000113 /* MockClock.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1B2C3D40200000000000201 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1B2C3D408000000000000D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1B2C3D404000000000000D1;
+			remoteInfo = caffeine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1B2C3D400000000000000FF /* caffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D400000000000000A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A1 /* CaffeineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineApp.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A2 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A3 /* CaffeinateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateManager.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A4 /* LoginItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManager.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A5 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000A7 /* SleepFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepFlag.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B1 /* MenuBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarContentView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B2 /* StatusHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusHeaderView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B3 /* QuickTimerSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTimerSection.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B4 /* OptionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSection.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B6 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B7 /* HeaderIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderIconButton.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B8 /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000B9 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000BA /* TimerPresetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresetButton.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000BB /* GlassPanelBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassPanelBackground.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000BC /* FooterCreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCreditView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000BD /* PanelOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelOptionRow.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000D0 /* CaffeinateProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateProcessRunner.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000D1 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000D2 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000D3 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E0 /* StatusItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E1 /* PanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelController.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E2 /* PanelEventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelEventMonitor.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E3 /* PanelFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelFrameCalculator.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E4 /* PanelHostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelHostingView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E5 /* KeyablePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyablePanel.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E6 /* FlippedContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippedContainerView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000E7 /* MenuBarRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarRootView.swift; sourceTree = "<group>"; };
+		A1B2C3D400000000000000C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1B2C3D40000000000000100 /* caffeineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caffeineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B2C3D40000000000000101 /* SleepFlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepFlagTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000102 /* PreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000103 /* CaffeinateManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateManagerTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000104 /* LoginItemManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManagerTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000105 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000106 /* PanelFrameCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelFrameCalculatorTests.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000110 /* MockCaffeinateRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCaffeinateRunner.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000111 /* MockLoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginItemService.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000112 /* InMemoryKeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryKeyValueStore.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000113 /* MockClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClock.swift; sourceTree = "<group>"; };
+		B1B2C3D40000000000000120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B2C3D402000000000000F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B2C3D40300000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B2C3D403000000000000E1 = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D403000000000000E2 /* caffeine */,
+				B1B2C3D40400000000000401 /* caffeineTests */,
+				A1B2C3D403000000000000E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E2 /* caffeine */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000A1 /* CaffeineApp.swift */,
+				A1B2C3D400000000000000A6 /* AppDelegate.swift */,
+				A1B2C3D400000000000000A3 /* CaffeinateManager.swift */,
+				A1B2C3D400000000000000A2 /* Preferences.swift */,
+				A1B2C3D400000000000000A4 /* LoginItemManager.swift */,
+				A1B2C3D400000000000000A5 /* Localization.swift */,
+				A1B2C3D400000000000000A7 /* SleepFlag.swift */,
+				A1B2C3D400000000000000B6 /* DesignTokens.swift */,
+				A1B2C3D403000000000000E6 /* Services */,
+				A1B2C3D403000000000000E7 /* Panel */,
+				A1B2C3D403000000000000E4 /* Views */,
+				A1B2C3D400000000000000C1 /* Assets.xcassets */,
+				A1B2C3D400000000000000A0 /* Info.plist */,
+			);
+			path = caffeine;
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000D0 /* CaffeinateProcessRunner.swift */,
+				A1B2C3D400000000000000D1 /* LoginItemService.swift */,
+				A1B2C3D400000000000000D2 /* KeyValueStore.swift */,
+				A1B2C3D400000000000000D3 /* Clock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E7 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000E0 /* StatusItemController.swift */,
+				A1B2C3D400000000000000E1 /* PanelController.swift */,
+				A1B2C3D400000000000000E2 /* PanelEventMonitor.swift */,
+				A1B2C3D400000000000000E3 /* PanelFrameCalculator.swift */,
+				A1B2C3D400000000000000E4 /* PanelHostingView.swift */,
+				A1B2C3D400000000000000E5 /* KeyablePanel.swift */,
+				A1B2C3D400000000000000E6 /* FlippedContainerView.swift */,
+				A1B2C3D400000000000000E7 /* MenuBarRootView.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000FF /* caffeine.app */,
+				B1B2C3D40000000000000100 /* caffeineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000B1 /* MenuBarContentView.swift */,
+				A1B2C3D400000000000000B2 /* StatusHeaderView.swift */,
+				A1B2C3D400000000000000B3 /* QuickTimerSection.swift */,
+				A1B2C3D400000000000000B4 /* OptionsSection.swift */,
+				A1B2C3D403000000000000E5 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1B2C3D403000000000000E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D400000000000000B7 /* HeaderIconButton.swift */,
+				A1B2C3D400000000000000B8 /* SectionTitleView.swift */,
+				A1B2C3D400000000000000B9 /* CustomToggle.swift */,
+				A1B2C3D400000000000000BA /* TimerPresetButton.swift */,
+				A1B2C3D400000000000000BB /* GlassPanelBackground.swift */,
+				A1B2C3D400000000000000BC /* FooterCreditView.swift */,
+				A1B2C3D400000000000000BD /* PanelOptionRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B1B2C3D40400000000000401 /* caffeineTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1B2C3D40400000000000402 /* Mocks */,
+				B1B2C3D40000000000000101 /* SleepFlagTests.swift */,
+				B1B2C3D40000000000000102 /* PreferencesTests.swift */,
+				B1B2C3D40000000000000103 /* CaffeinateManagerTests.swift */,
+				B1B2C3D40000000000000104 /* LoginItemManagerTests.swift */,
+				B1B2C3D40000000000000105 /* LocalizationTests.swift */,
+				B1B2C3D40000000000000106 /* PanelFrameCalculatorTests.swift */,
+				B1B2C3D40000000000000120 /* Info.plist */,
+			);
+			path = caffeineTests;
+			sourceTree = "<group>";
+		};
+		B1B2C3D40400000000000402 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B2C3D40000000000000110 /* MockCaffeinateRunner.swift */,
+				B1B2C3D40000000000000111 /* MockLoginItemService.swift */,
+				B1B2C3D40000000000000112 /* InMemoryKeyValueStore.swift */,
+				B1B2C3D40000000000000113 /* MockClock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B2C3D404000000000000D1 /* caffeine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B2C3D405000000000000D2 /* Build configuration list for PBXNativeTarget "caffeine" */;
+			buildPhases = (
+				A1B2C3D406000000000000D3 /* Sources */,
+				A1B2C3D402000000000000F1 /* Frameworks */,
+				A1B2C3D407000000000000D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = caffeine;
+			productName = caffeine;
+			productReference = A1B2C3D400000000000000FF /* caffeine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1B2C3D40500000000000501 /* caffeineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B2C3D40600000000000601 /* Build configuration list for PBXNativeTarget "caffeineTests" */;
+			buildPhases = (
+				B1B2C3D40300000000000302 /* Sources */,
+				B1B2C3D40300000000000301 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1B2C3D40700000000000701 /* PBXTargetDependency */,
+			);
+			name = caffeineTests;
+			productName = caffeineTests;
+			productReference = B1B2C3D40000000000000100 /* caffeineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B2C3D408000000000000D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1B2C3D404000000000000D1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B1B2C3D40500000000000501 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A1B2C3D404000000000000D1;
+					};
+				};
+			};
+			buildConfigurationList = A1B2C3D409000000000000D6 /* Build configuration list for PBXProject "caffeine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B2C3D403000000000000E1;
+			productRefGroup = A1B2C3D403000000000000E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B2C3D404000000000000D1 /* caffeine */,
+				B1B2C3D40500000000000501 /* caffeineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B2C3D407000000000000D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D401000000000000C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B2C3D406000000000000D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D401000000000000A1 /* CaffeineApp.swift in Sources */,
+				A1B2C3D401000000000000A6 /* AppDelegate.swift in Sources */,
+				A1B2C3D401000000000000A3 /* CaffeinateManager.swift in Sources */,
+				A1B2C3D401000000000000A2 /* Preferences.swift in Sources */,
+				A1B2C3D401000000000000A4 /* LoginItemManager.swift in Sources */,
+				A1B2C3D401000000000000A5 /* Localization.swift in Sources */,
+				A1B2C3D401000000000000A7 /* SleepFlag.swift in Sources */,
+				A1B2C3D401000000000000B1 /* MenuBarContentView.swift in Sources */,
+				A1B2C3D401000000000000B2 /* StatusHeaderView.swift in Sources */,
+				A1B2C3D401000000000000B3 /* QuickTimerSection.swift in Sources */,
+				A1B2C3D401000000000000B4 /* OptionsSection.swift in Sources */,
+				A1B2C3D401000000000000B6 /* DesignTokens.swift in Sources */,
+				A1B2C3D401000000000000B7 /* HeaderIconButton.swift in Sources */,
+				A1B2C3D401000000000000B8 /* SectionTitleView.swift in Sources */,
+				A1B2C3D401000000000000B9 /* CustomToggle.swift in Sources */,
+				A1B2C3D401000000000000BA /* TimerPresetButton.swift in Sources */,
+				A1B2C3D401000000000000BB /* GlassPanelBackground.swift in Sources */,
+				A1B2C3D401000000000000BC /* FooterCreditView.swift in Sources */,
+				A1B2C3D401000000000000BD /* PanelOptionRow.swift in Sources */,
+				A1B2C3D401000000000000D0 /* CaffeinateProcessRunner.swift in Sources */,
+				A1B2C3D401000000000000D1 /* LoginItemService.swift in Sources */,
+				A1B2C3D401000000000000D2 /* KeyValueStore.swift in Sources */,
+				A1B2C3D401000000000000D3 /* Clock.swift in Sources */,
+				A1B2C3D401000000000000E0 /* StatusItemController.swift in Sources */,
+				A1B2C3D401000000000000E1 /* PanelController.swift in Sources */,
+				A1B2C3D401000000000000E2 /* PanelEventMonitor.swift in Sources */,
+				A1B2C3D401000000000000E3 /* PanelFrameCalculator.swift in Sources */,
+				A1B2C3D401000000000000E4 /* PanelHostingView.swift in Sources */,
+				A1B2C3D401000000000000E5 /* KeyablePanel.swift in Sources */,
+				A1B2C3D401000000000000E6 /* FlippedContainerView.swift in Sources */,
+				A1B2C3D401000000000000E7 /* MenuBarRootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B2C3D40300000000000302 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B2C3D40100000000000101 /* SleepFlagTests.swift in Sources */,
+				B1B2C3D40100000000000102 /* PreferencesTests.swift in Sources */,
+				B1B2C3D40100000000000103 /* CaffeinateManagerTests.swift in Sources */,
+				B1B2C3D40100000000000104 /* LoginItemManagerTests.swift in Sources */,
+				B1B2C3D40100000000000105 /* LocalizationTests.swift in Sources */,
+				B1B2C3D40100000000000106 /* PanelFrameCalculatorTests.swift in Sources */,
+				B1B2C3D40100000000000110 /* MockCaffeinateRunner.swift in Sources */,
+				B1B2C3D40100000000000111 /* MockLoginItemService.swift in Sources */,
+				B1B2C3D40100000000000112 /* InMemoryKeyValueStore.swift in Sources */,
+				B1B2C3D40100000000000113 /* MockClock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1B2C3D40700000000000701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1B2C3D404000000000000D1 /* caffeine */;
+			targetProxy = B1B2C3D40200000000000201 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1B2C3D40A000000000000D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1B2C3D40A000000000000D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1B2C3D40B000000000000D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = caffeine/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.binaryloader.caffeine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B2C3D40B000000000000DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = caffeine/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.binaryloader.caffeine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1B2C3D40800000000000801 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = caffeineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.binaryloader.caffeineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/caffeine.app/Contents/MacOS/caffeine";
+			};
+			name = Debug;
+		};
+		B1B2C3D40800000000000802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = caffeineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.binaryloader.caffeineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/caffeine.app/Contents/MacOS/caffeine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B2C3D409000000000000D6 /* Build configuration list for PBXProject "caffeine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D40A000000000000D7 /* Debug */,
+				A1B2C3D40A000000000000D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B2C3D405000000000000D2 /* Build configuration list for PBXNativeTarget "caffeine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B2C3D40B000000000000D9 /* Debug */,
+				A1B2C3D40B000000000000DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B2C3D40600000000000601 /* Build configuration list for PBXNativeTarget "caffeineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B2C3D40800000000000801 /* Debug */,
+				B1B2C3D40800000000000802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B2C3D408000000000000D5 /* Project object */;
+}
