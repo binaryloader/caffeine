@@ -130,6 +130,47 @@ final class SleepFlagTests: XCTestCase {
         XCTAssertEqual(args, ["-d", "-i", "-m", "-s", "-u", "-t", "60"])
     }
 
+    // MARK: - isToggleEnabled(for:isActive:timerSeconds:)
+
+    func test_isToggleEnabled_user_비활성_무제한이면_true() {
+        // 비활성 상태에서는 사용자가 미리 -u를 ON으로 설정해 둘 수 있어야 한다.
+        // 무제한 시작 시 SleepFlag.arguments가 자동으로 -u를 제외하므로 부작용이 없다
+        XCTAssertTrue(SleepFlag.isToggleEnabled(for: .user, isActive: false, timerSeconds: 0))
+    }
+
+    func test_isToggleEnabled_user_비활성_타이머있음이면_true() {
+        XCTAssertTrue(SleepFlag.isToggleEnabled(for: .user, isActive: false, timerSeconds: 300))
+    }
+
+    func test_isToggleEnabled_user_활성_무제한이면_false() {
+        // 잠가야 하는 유일한 케이스. -u는 -t 없이는 동작하지 않으므로 활성 + 무제한에서는
+        // 토글을 켜도 caffeinate 프로세스에 전달되지 않아 사용자에게 혼란만 준다
+        XCTAssertFalse(SleepFlag.isToggleEnabled(for: .user, isActive: true, timerSeconds: 0))
+    }
+
+    func test_isToggleEnabled_user_활성_타이머있음이면_true() {
+        XCTAssertTrue(SleepFlag.isToggleEnabled(for: .user, isActive: true, timerSeconds: 300))
+    }
+
+    func test_isToggleEnabled_비_isTimerOnly_플래그는_상태와_무관하게_항상_true() {
+        let nonTimerOnly: [SleepFlag] = [.display, .idle, .disk, .ac]
+        // (isActive, timerSeconds) 4개 조합 전수 검사
+        let cases: [(Bool, Int)] = [
+            (false, 0),
+            (false, 300),
+            (true, 0),
+            (true, 300)
+        ]
+        for flag in nonTimerOnly {
+            for (isActive, seconds) in cases {
+                XCTAssertTrue(
+                    SleepFlag.isToggleEnabled(for: flag, isActive: isActive, timerSeconds: seconds),
+                    "flag=\(flag) isActive=\(isActive) seconds=\(seconds)"
+                )
+            }
+        }
+    }
+
     @MainActor
     func test_타이머_0_또는_음수는_무제한으로_취급된다() {
         let store = InMemoryKeyValueStore()

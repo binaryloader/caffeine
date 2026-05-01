@@ -75,6 +75,24 @@ enum SleepFlag: String, CaseIterable, Identifiable {
         }
     }
 
+    /// UI 토글이 활성화되어야 하는지 결정한다
+    ///
+    /// `-u`(isTimerOnly)는 caffeinate(8) 매뉴얼상 `-t`와 함께일 때만 동작하지만, 그 사실이
+    /// 곧 토글을 항상 잠가야 한다는 뜻은 아니다. 토글 잠금을 풀어두는 게 자연스러운 케이스가 있다
+    /// - 비활성 상태: 사용자가 미리 ON으로 설정해 둘 수 있어야 다음 타이머 시작 시 자동 적용된다.
+    ///   `arguments(from:timerSeconds:)`가 `hasTimer == false`이면 자동으로 인자에서 제외하므로
+    ///   영속화된 ON이 무제한 시작 시 부작용을 일으키지 않는다
+    /// - 활성 + 타이머 있음: 즉시 반영 가능하므로 자유롭게 토글한다
+    ///
+    /// 잠가야 하는 케이스는 정확히 하나뿐이다 - 활성 + 무제한. 이 상태에서는 `-u`를 켜도 caffeinate
+    /// 프로세스에 전달되지 않으므로 사용자에게 "켰는데 동작하지 않는" 혼란만 준다.
+    /// 그 외 케이스는 모두 토글이 활성화된다(비-isTimerOnly 플래그는 timer 의존이 없어 항상 true)
+    static func isToggleEnabled(for flag: SleepFlag, isActive: Bool, timerSeconds: Int) -> Bool {
+        guard flag.isTimerOnly else { return true }
+
+        return !isActive || timerSeconds > 0
+    }
+
     /// 옵션 모음을 caffeinate 인자 배열로 변환한다
     ///
     /// - Parameters:

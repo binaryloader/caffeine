@@ -142,6 +142,14 @@ final class Preferences {
         )
     }
 
+    /// 무제한 모드 진입 시 호출. 타이머가 있을 때만 의미 있는 플래그(`-u`)를 모두 OFF로 되돌린다.
+    /// 토글은 disable로 잠기지만 시각적으로 ON으로 남아 사용자에게 잘못된 인상을 주는 회귀를 방지한다
+    func disableTimerOnlyFlags() {
+        for flag in SleepFlag.allCases where flag.isTimerOnly {
+            self[flag] = false
+        }
+    }
+
     /// appLanguageRaw를 enum 타입으로 노출한다. 잘못된 값이면 시스템 기본으로 폴백한다
     var appLanguage: AppLanguage {
         get { AppLanguage(rawValue: appLanguageRaw) ?? AppLanguage.defaultFromSystem() }

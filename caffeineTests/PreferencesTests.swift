@@ -158,6 +158,55 @@ final class PreferencesTests: XCTestCase {
         }
     }
 
+    // MARK: - disableTimerOnlyFlags
+
+    func test_disableTimerOnlyFlags는_isTimerOnly_플래그를_OFF로_되돌린다() {
+        let store = InMemoryKeyValueStore()
+        let prefs = Preferences(store: store)
+        for flag in SleepFlag.allCases {
+            prefs[flag] = false
+        }
+        // user(-u)는 isTimerOnly이므로 OFF로 떨어져야 한다
+        prefs[.user] = true
+
+        prefs.disableTimerOnlyFlags()
+
+        XCTAssertFalse(prefs[.user])
+    }
+
+    func test_disableTimerOnlyFlags는_비_isTimerOnly_플래그를_보존한다() {
+        let store = InMemoryKeyValueStore()
+        let prefs = Preferences(store: store)
+        for flag in SleepFlag.allCases {
+            prefs[flag] = false
+        }
+        // 비-isTimerOnly 플래그(display/idle/disk/ac)는 호출 전 값 그대로 유지되어야 한다
+        prefs[.display] = true
+        prefs[.idle] = true
+        prefs[.disk] = true
+        prefs[.ac] = true
+        prefs[.user] = true
+
+        prefs.disableTimerOnlyFlags()
+
+        XCTAssertTrue(prefs[.display])
+        XCTAssertTrue(prefs[.idle])
+        XCTAssertTrue(prefs[.disk])
+        XCTAssertTrue(prefs[.ac])
+        XCTAssertFalse(prefs[.user])
+    }
+
+    func test_disableTimerOnlyFlags는_store에_false를_영속화한다() {
+        let store = InMemoryKeyValueStore()
+        let prefs = Preferences(store: store)
+        prefs[.user] = true
+        XCTAssertEqual(store.bool(forKey: SleepFlag.user.defaultsKey), true)
+
+        prefs.disableTimerOnlyFlags()
+
+        XCTAssertEqual(store.bool(forKey: SleepFlag.user.defaultsKey), false)
+    }
+
     // MARK: - binding(for:)
 
     func test_binding은_subscript와_쌍방향_연결된다() {

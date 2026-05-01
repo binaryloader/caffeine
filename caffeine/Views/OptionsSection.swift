@@ -153,13 +153,17 @@ private struct OptionRow: View {
         manager.restartIfActive(with: preferences)
     }
 
-    /// timerOnly 플래그(`-u`)는 타이머가 설정된 경우에만 의미가 있으므로 무제한(0)이면 비활성화한다
-    ///
+    /// timerOnly 플래그(`-u`)는 caffeinate(8)상 `-t`와 함께일 때만 동작하지만, 그 사실 때문에
+    /// 토글을 항상 잠그면 비활성 상태에서 미리 ON으로 설정해 두는 사용 흐름이 막힌다.
+    /// 잠가야 하는 케이스는 정확히 하나뿐이다 - 활성 + 무제한(타이머 0). 그 외에는 자유롭게 토글한다.
+    /// 결정 로직 자체는 테스트 가능성을 위해 `SleepFlag.isToggleEnabled(for:isActive:timerSeconds:)`로 분리되어 있다.
     /// 과거에는 `flag.key == "user"` 문자열 비교였지만 SleepFlag.isTimerOnly로 통합되었다
     private func isEnabled() -> Bool {
-        if flag.flag.isTimerOnly { return preferences.lastTimerSeconds > 0 }
-
-        return true
+        SleepFlag.isToggleEnabled(
+            for: flag.flag,
+            isActive: manager.isActive,
+            timerSeconds: preferences.lastTimerSeconds
+        )
     }
 }
 

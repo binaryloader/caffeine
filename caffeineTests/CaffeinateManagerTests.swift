@@ -167,6 +167,27 @@ final class CaffeinateManagerTests: XCTestCase {
         XCTAssertFalse(runner.capturedArguments.contains("-t"))
     }
 
+    func test_activateInfinite는_isTimerOnly_플래그를_OFF로_되돌린다() {
+        let runner = MockCaffeinateRunner()
+        let manager = CaffeinateManager(runner: runner)
+        let store = InMemoryKeyValueStore()
+        let prefs = Preferences(store: store)
+        for flag in SleepFlag.allCases {
+            prefs[flag] = false
+        }
+        prefs[.idle] = true
+        // 비활성 상태에서 사용자가 미리 -u를 ON으로 켜둔 시나리오
+        prefs[.user] = true
+
+        manager.activateInfinite(with: prefs)
+
+        // -u는 OFF로 되돌려야 하고 비-isTimerOnly 플래그(idle)는 보존되어야 한다
+        XCTAssertFalse(prefs[.user])
+        XCTAssertTrue(prefs[.idle])
+        // caffeinate 인자에도 -u가 포함되지 않는다
+        XCTAssertFalse(runner.capturedArguments.contains("-u"))
+    }
+
     // MARK: - 재시작
 
     func test_restartIfActive는_inactive면_no_op이다() {

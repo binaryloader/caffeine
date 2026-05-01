@@ -156,8 +156,17 @@ final class CaffeinateManager {
     /// 헤더 메인 토글 ON 시 ∞ 모드로 활성화한다
     ///
     /// 핸드오프 명세: "메인 토글 ON" → ∞ 타이머로 활성화
+    ///
+    /// 무제한 진입 시점에 isTimerOnly 플래그(`-u`)를 OFF로 되돌린다. 사용자가 비활성 상태에서
+    /// `-u`를 ON으로 켜둔 채 메인 토글로 무제한 모드를 시작하면 토글은 disable로 잠기지만
+    /// 시각적으로 ON으로 남아 "켜놨는데 잠겼다 = 동작하는 줄 알았는데 안 한다"는 잘못된 인상을 준다.
+    /// `start(with:)`는 단방향 흐름 보존을 위해 preferences를 mutate하지 않지만, `activateInfinite`는
+    /// "무제한으로 시작"이라는 사용자 의도가 액션 자체에 담겨 있으므로 같은 사이클에서 의도와
+    /// 같은 방향으로 mutate하는 것이 합리적이다(옵션 토글이 OFF인데 매니저가 ON으로 되돌리는 식의
+    /// 단방향 위반 사례와는 다르다)
     func activateInfinite(with preferences: Preferences) {
         preferences.lastTimerSeconds = 0
+        preferences.disableTimerOnlyFlags()
         start(with: preferences)
     }
 

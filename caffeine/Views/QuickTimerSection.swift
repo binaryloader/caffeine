@@ -249,6 +249,13 @@ struct QuickTimerSection: View {
     private func applyPreset(seconds: Int) {
         focusedField = nil
         preferences.lastTimerSeconds = seconds
+        // ∞ 칩(seconds == 0) 클릭은 무제한 모드 진입이므로 isTimerOnly 플래그(`-u`)를 OFF로 되돌린다.
+        // 비활성 상태에서 미리 ON으로 켜둔 토글이 무제한 시작 후 disable로 잠긴 채 시각적으로 ON으로
+        // 남아 사용자에게 잘못된 인상을 주는 회귀를 막는다. seconds > 0인 일반 프리셋(5분/15분 등)은
+        // 사용자가 미리 켜둔 `-u`를 살려야 하므로 호출하지 않는다
+        if seconds == 0 {
+            preferences.disableTimerOnlyFlags()
+        }
         manager.start(with: preferences)
         showCustomInput = false
     }
