@@ -1,4 +1,4 @@
-**English** | [한국어](docs/i18n/ko/README.md) | [日本語](docs/i18n/ja/README.md)
+English | [한국어](docs/i18n/ko/README.md) | [日本語](docs/i18n/ja/README.md)
 
 # caffeine
 

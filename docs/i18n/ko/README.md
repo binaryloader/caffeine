@@ -1,4 +1,4 @@
-[English](../../../README.md) | **한국어** | [日本語](../ja/README.md)
+[English](../../../README.md) | 한국어 | [日本語](../ja/README.md)
 
 # caffeine
 
