@@ -1,3 +1,5 @@
+**English** | [한국어](docs/i18n/ko/README.md) | [日本語](docs/i18n/ja/README.md)
+
 # caffeine
 
 A lightweight macOS menu bar app that controls the system `caffeinate` utility from a glassmorphism SwiftUI panel. Keep your Mac awake with one click, customize which sleep behaviors to prevent, and pick a timer or run indefinitely.
